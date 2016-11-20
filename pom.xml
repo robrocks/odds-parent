@@ -6,7 +6,7 @@
 
     <groupId>pro.rrt3ch.odds</groupId>
     <artifactId>odds-parent</artifactId>
-    <version>1.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>odds-parent</name>
