@@ -7,8 +7,45 @@
     <groupId>pro.rrt3ch.odds</groupId>
     <artifactId>odds-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <name>odds-parent</name>
 
+    <properties>
+        <version.dropwizard>1.0.4</version.dropwizard>
+        <version.dropwizard-java8>0.9.0-1</version.dropwizard-java8>
+        <version.dropwizard-version.bundle>0.9.2</version.dropwizard-version.bundle>
+        <version.dropwizard-swagger>1.0.0-1</version.dropwizard-swagger>
+        <version.swagger-annotations>1.5.1-M2</version.swagger-annotations>
+        <version.io.swagger-annotations>1.5.9</version.io.swagger-annotations>
+        <version.maven-jar-plugin>3.0.2</version.maven-jar-plugin>
+        <version.maven-compiler.plugin>3.5</version.maven-compiler.plugin>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.dropwizard</groupId>
+                <artifactId>dropwizard-core</artifactId>
+                <version>${version.dropwizard}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${version.maven-compiler.plugin}</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
