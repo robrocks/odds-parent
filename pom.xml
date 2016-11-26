@@ -19,7 +19,7 @@
         <version.swagger-annotations>1.5.1-M2</version.swagger-annotations>
         <version.io.swagger-annotations>1.5.9</version.io.swagger-annotations>
         <version.maven-jar-plugin>3.0.2</version.maven-jar-plugin>
-        <version.maven-compiler.plugin>3.5</version.maven-compiler.plugin>
+        <version.maven-compiler-plugin>3.5</version.maven-compiler-plugin>
     </properties>
 
     <dependencyManagement>
@@ -43,7 +43,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${version.maven-compiler.plugin}</version>
+                <version>${version.maven-compiler-plugin}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${version.maven-jar-plugin}</version>
             </plugin>
         </plugins>
     </build>
