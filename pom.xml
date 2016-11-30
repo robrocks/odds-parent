@@ -6,7 +6,7 @@
 
     <groupId>pro.rrt3ch.odds</groupId>
     <artifactId>odds-parent</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>odds-parent</name>
@@ -20,7 +20,17 @@
         <version.io.swagger-annotations>1.5.9</version.io.swagger-annotations>
         <version.maven-jar-plugin>3.0.2</version.maven-jar-plugin>
         <version.maven-compiler-plugin>3.5</version.maven-compiler-plugin>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <github.maven.repository>file:///home/rob/Documents/source/maven-repository</github.maven.repository>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-repository</id>
+            <url>${github.maven.repository}</url>
+        </repository>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>
