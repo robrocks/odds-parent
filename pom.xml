@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pro.rrt3ch.odds</groupId>
+    <groupId>org.rrt3ch.tellmetheodds</groupId>
     <artifactId>odds-parent</artifactId>
-    <version>1.0.3-SNAPHOST</version>
+    <version>1.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>odds-parent</name>
