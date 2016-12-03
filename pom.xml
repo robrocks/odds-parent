@@ -22,7 +22,7 @@
         <version.maven-compiler-plugin>3.5</version.maven-compiler-plugin>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <github.maven.repository>file:///home/rob/Documents/source/maven-repository</github.maven.repository>
+        <github.maven.repository>file://${user.home}/Documents/source/maven-repository</github.maven.repository>
     </properties>
 
     <distributionManagement>
