@@ -6,7 +6,7 @@
 
     <groupId>org.rrt3ch.tellmetheodds</groupId>
     <artifactId>odds-parent</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
 
     <name>odds-parent</name>
